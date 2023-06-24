@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>6caa2a89-7996-4515-93a3-0a64ea578ff2</UserSecretsId>
+    <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
+	<DockerfileRunArguments>-v "$(USERPROFILE)\.aws:/root/.aws"</DockerfileRunArguments>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.18.1" />
+	<PackageReference Include="AWSSDK.DynamoDBv2" Version="3.7.103.22" />
+	<PackageReference Include="AWSSDK.Extensions.NETCore.Setup" Version="3.7.7" />
+	<PackageReference Include="Dapper" Version="2.0.123" />
+	<PackageReference Include="EntityFramework" Version="6.4.4" />
+	<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="6.0.16" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.16">
+	<PrivateAssets>all</PrivateAssets>
+	<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+	<PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.16" />
+	<PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.16">
+	<PrivateAssets>all</PrivateAssets>
+	<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+	</PackageReference>
+  </ItemGroup>
+
+</Project>
