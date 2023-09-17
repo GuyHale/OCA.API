@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Builder;
 using System.Data.Entity.Infrastructure;
 using OCA.API.Interfaces;
 using OCA.API.Services;
+using Amazon.Runtime;
 
 var builder = WebApplication.CreateBuilder(args);
 
 AWSOptions aWSOptions = new Amazon.Extensions.NETCore.Setup.AWSOptions()
 {
-    Region = RegionEndpoint.EUWest2,
-    Profile = "guy_hale_legend"
+    Region = RegionEndpoint.EUWest2
 };
 
 // Add services to the container.

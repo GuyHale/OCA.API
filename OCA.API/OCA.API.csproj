@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <UserSecretsId>6caa2a89-7996-4515-93a3-0a64ea578ff2</UserSecretsId>
     <DockerDefaultTargetOS>Linux</DockerDefaultTargetOS>
-	<DockerfileRunArguments>-v "$(USERPROFILE)\.aws:/root/.aws"</DockerfileRunArguments>
+	<DockerfileRunArguments> -p 8080:80</DockerfileRunArguments>
   </PropertyGroup>
 
   <ItemGroup>
