@@ -15,7 +15,7 @@ namespace OCA.API.Models
         public string? Abbreviation { get; set; }
 
         [DynamoDBProperty("USDValuation")]
-        public string? USDValuation { get; set; }
+        public string? Valuation { get; set; }
 
         [DynamoDBProperty("MarketCap")]
         public string? MarketCap { get; set; }
